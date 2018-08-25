@@ -1,0 +1,46 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+.card{
+    position: absolute;
+    top: 60px;
+    left:0;
+    height:300px;
+    width:350px;
+    border: 1px solid black;
+    box-shadow: 10px 10px gray;
+}
+.card-title{
+    text-align: center;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+.card-1{
+    position: absolute;
+    top: 60px;
+    right:50px;
+    height:300px;
+    width:350px;
+    border: 1px solid #ececec;
+    box-shadow: 10px 10px gray;
+}
+.card-title1{
+    text-align: center;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+.form-control{
+    margin-top:35px ;
+}
+.btn{
+    position: relative;
+    width: 246px;
+    margin-top: 12px;
+}
+.s1{
+    height:25px;
+    width:100%;
+    position: relative;
+    display: inline-block;
+}

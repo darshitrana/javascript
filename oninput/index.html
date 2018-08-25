@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript exaple</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="card" style="width: 18rem;">
+
+        <div class="card-body">
+            <h5 class="card-title">login</h5>
+            <form>
+                <div class="form-group">
+
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email " oninput="inputDiv()">
+
+                </div>
+                <div class="form-group">
+
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" oninput="input2()">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="card-1" style="width: 18rem;">
+
+        <div class="card-body1">
+            <h5 class="card-title1">output</h5>
+            <div class="container">
+
+                <div class="s1">
+                    <p id="demo"></p>
+                </div>
+                <div class="s2">
+                    <p id="demo1"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+function inputDiv() {
+        var a=document.getElementById('exampleInputEmail1').value;
+    document.getElementById("demo").innerHTML = "Your email is: " + a;
+}
+function input2() {
+    var a=document.getElementById('exampleInputPassword1').value;
+    document.getElementById("demo1").innerHTML = "Your password is: " + a;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        .model {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            display: none;
+            z-index: 1;
+            padding: 30px;
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .item {
+
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .gallery .item img {
+            width: 200px;
+        }
+
+        .model span {
+            color: white;
+            padding: 20px;
+            right: 20px;
+            font-size: 20px;
+            position: absolute;
+        }
+
+        .model img {
+            height: 90%;
+            margin: 30px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="gallery">
+
+    <div class="item" onclick="modelOpen(this)">
+        <img src="im1.jpg">
+    </div>
+    <div class="item" onclick="modelOpen(this)">
+        <img src="im2.jpg">
+    </div>
+
+</div>
+
+<div class="model" id="model">
+    <span id="close">close</span>
+    <img id="modelImg" src="im1.jpg" data-src="" data-caption="">
+    <div id="caption" class="caption"></div>
+</div>
+
+
+<script>
+
+    var model = document.getElementById('model');
+    var modelImg = document.getElementById('modelImg');
+    var close = document.getElementById('close');
+    var caption = document.getElementById('caption');
+
+    function modelOpen(data) {
+
+        model.style.display = "block";
+        var img1 = data.getElementsByTagName('img');
+        modelImg.src = img1[0].src;
+
+        close.addEventListener('click', function () {
+            model.style.display = "none";
+        });
+    }
+
+</script>
+
+</body>
+</html>

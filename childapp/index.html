@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sample</title>
+</head>
+<body>
+
+<form name="imageForm">
+    <table>
+        <tr>
+            <td>
+                <!--<input onclick="displayImage();" type=button value="Display Random Image">-->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="" name="canvas" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script>
+    var imagesArray = ["i1.gif", "i2.gif"];
+
+
+
+    setInterval(function(){displayImage();  }, 3000);
+
+    function displayImage(){
+
+
+        var num = Math.floor(Math.random() * 2);
+
+        document.canvas.src = imagesArray[num];
+
+    }
+
+</script>
+</body>
+</html>

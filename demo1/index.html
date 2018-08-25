@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+<button id="edit" onclick="editData()">edit</button>
+<!--<input type="button" value="edit" id="edit">-->
+
+
+<script>
+
+    function editData() {
+        var a = document.getElementById("edit").innerHTML;
+        console.log(a);
+        if (a === "edit") {
+            document.getElementById("edit").innerHTML = "save";
+        }
+        else if (a === "save") {
+            document.getElementById("edit").innerHTML = "edit";
+        }
+    }
+
+
+</script>
+</body>
+</html>
